@@ -1,0 +1,8 @@
+name,exists,version,description,author,license,dependencies_count,has_install_script,maintainers_count,downloads,label
+react,True,18.2.0,A JavaScript library for building user interfaces,Facebook,MIT,3,False,5,50000000,0
+lodash,True,4.17.21,Lodash modular utilities,John-David Dalton,MIT,0,False,3,40000000,0
+expres,True,0.0.1,fast minimalist web framework typo bait,,ISC,2,True,1,12,1
+axio,True,0.0.1,Promise based HTTP client,,MIT,1,True,1,8,1
+reakt,True,0.0.1,React alternative,,UNLICENSED,0,True,1,3,1
+express,True,4.18.2,Fast unopinionated minimalist web framework,TJ Holowaychuk,MIT,30,False,8,25000000,0
+axios,True,1.6.2,Promise based HTTP client,Matt Zabriskie,MIT,4,False,4,35000000,0
