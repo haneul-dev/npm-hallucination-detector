@@ -23,6 +23,9 @@ data/raw/
 *.json
 !data/samples/*.csv
 !data/processed/maloss_npm_malicious.csv
+!data/processed/npm_advisory.csv
+!data/processed/backstabbers_npm.csv
+!data/processed/llm_hallucinated_packages.csv
 
 # Model weights
 *.pkl

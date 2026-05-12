@@ -1,0 +1,175 @@
+name,vuln_id,severity,summary,label
+lodash,GHSA-29mw-wpgm-hmr9,MODERATE,Regular Expression Denial of Service (ReDoS) in lodash,1
+lodash,GHSA-35jh-r3h4-6jhm,HIGH,Command Injection in lodash,1
+lodash,GHSA-4xc9-xhrj-v574,HIGH,Prototype Pollution in lodash,1
+lodash,GHSA-f23m-r3pf-42rh,MODERATE,lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`,1
+lodash,GHSA-fvqr-27wr-82fm,MODERATE,Prototype Pollution in lodash,1
+lodash,GHSA-jf85-cpcp-j695,CRITICAL,Prototype Pollution in lodash,1
+lodash,GHSA-p6mc-m468-83gw,HIGH,Prototype Pollution in lodash,1
+lodash,GHSA-r5fr-rjxr-66jc,HIGH,lodash vulnerable to Code Injection via `_.template` imports key names,1
+lodash,GHSA-x5rq-j2xg-h7qm,MODERATE,Regular Expression Denial of Service (ReDoS) in lodash,1
+lodash,GHSA-xxjr-mmjv-4gpg,MODERATE,Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions,1
+express,GHSA-cm5g-3pgc-8rg4,MODERATE,Express ressource injection,1
+express,GHSA-gpvr-g6gh-9mc2,MODERATE,No Charset in Content-Type Header in express,1
+express,GHSA-jj78-5fmv-mv28,LOW,Express Open Redirect vulnerability,1
+express,GHSA-qw6h-vgh9-j6wx,LOW,express vulnerable to XSS via response.redirect(),1
+express,GHSA-rv95-896h-c2vc,MODERATE,Express.js Open Redirect in malformed URLs,1
+axios,GHSA-3p68-rc4w-qgx5,MODERATE,Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF,1
+axios,GHSA-3w6x-2g7m-8v23,MODERATE,Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`,1
+axios,GHSA-42xw-2xvc-qx8m,HIGH,Denial of Service in axios,1
+axios,GHSA-43fc-jf86-j433,HIGH,Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig,1
+axios,GHSA-445q-vr5w-6q77,MODERATE,Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream,1
+axios,GHSA-4hjh-wcwx-xvwj,HIGH,Axios is vulnerable to DoS attack through lack of data size check,1
+axios,GHSA-4w2v-q235-vp99,MODERATE,Axios vulnerable to Server-Side Request Forgery,1
+axios,GHSA-5c9x-8gcm-mpgx,MODERATE,Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0,1
+axios,GHSA-62hf-57xw-28j9,MODERATE,Axios: unbounded recursion in toFormData causes DoS via deeply nested request data,1
+axios,GHSA-6chq-wfr3-2hj9,HIGH,Axios: Header Injection via Prototype Pollution,1
+axios,GHSA-8hc4-vh64-cxmj,HIGH,Server-Side Request Forgery in axios,1
+axios,GHSA-cph5-m8f7-6c5x,HIGH,axios Inefficient Regular Expression Complexity vulnerability,1
+axios,GHSA-fvcv-3m26-pcqx,MODERATE,Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain,1
+axios,GHSA-jr5f-v2jv-69x6,HIGH,axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL,1
+axios,GHSA-m7pr-hjqh-92cm,MODERATE,Axios: no_proxy bypass via IP alias allows SSRF,1
+axios,GHSA-pf86-5x62-jrwf,HIGH,"Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",1
+axios,GHSA-pmwg-cvhr-8vh7,HIGH,Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet,1
+axios,GHSA-q8qp-cvcw-x6jj,HIGH,Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and ,1
+axios,GHSA-qj83-cq47-w5f8,MODERATE,Axios HTTP/2 Session Cleanup State Corruption Vulnerability,1
+axios,GHSA-vf2m-468p-8v99,MODERATE,Axios: HTTP adapter streamed responses bypass maxContentLength,1
+axios,GHSA-w9j2-pvgh-6h63,MODERATE,Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy,1
+axios,GHSA-wf5p-g6vw-rhxx,MODERATE,Axios Cross-Site Request Forgery Vulnerability,1
+axios,GHSA-xhjh-pmcv-23jw,LOW,Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams,1
+axios,GHSA-xx6v-rp6x-q39c,MODERATE,Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coe,1
+axios,MAL-2026-2307,,Malicious code in axios (npm),1
+react,GHSA-g53w-52xc-2j85,MODERATE,Cross-Site Scripting in react,1
+react,GHSA-hg79-j56m-fxgv,HIGH,Cross-Site Scripting in react,1
+vue,GHSA-5j4c-8p2g-v4jx,LOW,ReDoS vulnerability in vue package that is exploitable through inefficient regex evaluation in the p,1
+angular,GHSA-28hp-fgcr-2r4h,MODERATE,Cross-Site Scripting via JSONP,1
+angular,GHSA-2qqx-w9hr-q5gx,MODERATE,angular vulnerable to regular expression denial of service via the $resource service,1
+angular,GHSA-2vrf-hf26-jrp5,MODERATE,angular vulnerable to regular expression denial of service via the angular.copy() utility,1
+angular,GHSA-4w4v-5hc9-xrr2,HIGH,angular vulnerable to super-linear runtime due to backtracking,1
+angular,GHSA-5cp4-xmrw-59wf,MODERATE,XSS via JQLite DOM manipulation functions in AngularJS,1
+angular,GHSA-89mq-4x47-5v83,HIGH,angular Prototype Pollution vulnerability,1
+angular,GHSA-j58c-ww9w-pwp5,LOW,AngularJS improperly sanitizes SVG elements,1
+angular,GHSA-m2h2-264f-f486,MODERATE,angular vulnerable to regular expression denial of service (ReDoS),1
+angular,GHSA-m9gf-397r-hwpg,LOW,AngularJS allows attackers to bypass common image source restrictions,1
+angular,GHSA-mhp6-pxh8-r675,MODERATE,Angular vulnerable to Cross-site Scripting,1
+angular,GHSA-mqm9-c95h-x2p6,LOW,AngularJS allows attackers to bypass common image source restrictions,1
+angular,GHSA-prc3-vjfx-vhm9,MODERATE,Angular (deprecated package) Cross-site Scripting,1
+angular,GHSA-qwqh-hm9m-p5hr,MODERATE,"angular vulnerable to regular expression denial of service via the <input type=""url""> element",1
+angular,GHSA-r5fx-8r73-v86c,MODERATE,AngularJS Cross-site Scripting due to failure to sanitize `xlink.href` attributes,1
+jquery,GHSA-2pqj-h3vj-pqgw,MODERATE,Cross-Site Scripting in jquery,1
+jquery,GHSA-579v-mp3v-rrw5,MODERATE,jQuery vulnerable to Cross-Site Scripting (XSS),1
+jquery,GHSA-6c3j-c64m-qhgq,MODERATE,"XSS in jQuery as used in Drupal, Backdrop CMS, and other products",1
+jquery,GHSA-gxr4-xjj5-5px2,MODERATE,Potential XSS vulnerability in jQuery,1
+jquery,GHSA-jpcq-cgw6-v4j6,MODERATE,Potential XSS vulnerability in jQuery,1
+jquery,GHSA-mhpp-875w-9cpv,HIGH,Denial of Service in jquery,1
+jquery,GHSA-q4m3-2j7h-f7xw,MODERATE,Cross-Site Scripting in jquery,1
+jquery,GHSA-rmxg-73gg-4p98,MODERATE,Cross-Site Scripting (XSS) in jquery,1
+underscore,GHSA-cf4h-3jhx-xvhq,CRITICAL,Arbitrary Code Execution in underscore,1
+underscore,GHSA-qpx9-hpmf-5gmw,HIGH,"Underscore has unlimited recursion in _.flatten and _.isEqual, potential for DoS attack",1
+moment,GHSA-446m-mv8f-q348,HIGH,Regular Expression Denial of Service in moment,1
+moment,GHSA-87vv-r9j6-g5qv,MODERATE,Regular Expression Denial of Service in moment,1
+moment,GHSA-8hfj-j24r-96c4,HIGH,Path Traversal: 'dir/../../filename' in moment.locale,1
+moment,GHSA-wc69-rhjr-hc9g,HIGH,Moment.js vulnerable to Inefficient Regular Expression Complexity,1
+webpack,GHSA-38r7-794h-5758,LOW,webpack buildHttp HttpUriPlugin allowedUris bypass via HTTP redirects → SSRF + cache persistence,1
+webpack,GHSA-4vvj-4cpr-p986,MODERATE,Webpack's AutoPublicPathRuntimeModule has a DOM Clobbering Gadget that leads to XSS,1
+webpack,GHSA-8fgc-7cc6-rx7x,LOW,webpack buildHttp: allowedUris allow-list bypass via URL userinfo (@) leading to build-time SSRF beh,1
+webpack,GHSA-hc6q-2mpp-qw7j,CRITICAL,Cross-realm object access in Webpack 5,1
+chalk,MAL-2025-46969,,Malicious code in chalk (npm),1
+minimist,GHSA-vh95-rmgr-6w4m,MODERATE,Prototype Pollution in minimist,1
+minimist,GHSA-xvch-5gv4-984h,CRITICAL,Prototype Pollution in minimist,1
+semver,GHSA-c2qf-rxjj-qqgw,HIGH,semver vulnerable to Regular Expression Denial of Service,1
+semver,GHSA-x6fg-f45m-jf5q,HIGH,Regular Expression Denial of Service in semver,1
+debug,GHSA-4x49-vf9v-38px,HIGH,debug@4.4.2 contains malware after npm account takeover,1
+debug,GHSA-9vvw-cc9w-f27h,HIGH,debug Inefficient Regular Expression Complexity vulnerability,1
+debug,GHSA-gxpj-cx7g-858c,LOW,Regular Expression Denial of Service in debug,1
+debug,MAL-2025-46974,,Malicious code in debug (npm),1
+glob,GHSA-5j98-mcp5-4vw2,HIGH,glob CLI: Command injection via -c/--cmd executes matches with shell:true,1
+async,GHSA-fwr7-v2mv-hh25,HIGH,Prototype Pollution in async,1
+request,GHSA-7xfp-9c55-5vqj,MODERATE,Remote Memory Exposure in request,1
+request,GHSA-p8p7-x288-28g6,MODERATE,Server-Side Request Forgery in Request,1
+superagent,GHSA-8225-6cvr-8pqp,MODERATE,superagent vulnerable to zip bomb attacks,1
+node-fetch,GHSA-r683-j2x4-v87g,HIGH,node-fetch forwards secure headers to untrusted sites,1
+node-fetch,GHSA-vp56-6g26-6827,MODERATE,node-fetch Inefficient Regular Expression Complexity ,1
+node-fetch,GHSA-w7rc-rwvf-8q5r,LOW,The `size` option isn't honored after following a redirect in node-fetch,1
+got,GHSA-pfrx-2q88-qq97,MODERATE,Got allows a redirect to a UNIX socket,1
+puppeteer,GHSA-c2gp-86p4-5935,MODERATE,Use-After-Free in puppeteer,1
+mongoose,GHSA-8687-vv9j-hgph,CRITICAL,Improper Input Validation in Automattic Mongoose,1
+mongoose,GHSA-9m93-w8w6-76hh,CRITICAL,Mongoose Prototype Pollution vulnerability,1
+mongoose,GHSA-f825-f98c-gj3g,HIGH,automattic/mongoose vulnerable to Prototype pollution via Schema.path,1
+mongoose,GHSA-h8hf-x3f4-xwgp,CRITICAL,Mongoose Vulnerable to Prototype Pollution in Schema Object,1
+mongoose,GHSA-m7xq-9374-9rvx,HIGH,Mongoose search injection vulnerability,1
+mongoose,GHSA-r5xw-q988-826m,MODERATE,Remote Memory Exposure in mongoose,1
+mongoose,GHSA-vg7j-7cwx-8wgw,CRITICAL,Mongoose search injection vulnerability,1
+mongoose,GHSA-wpg9-53fq-2r8h,HIGH,Mongoose's Improper Sanitization of $nor in sanitizeFilter May Allow NoSQL Injection,1
+sequelize,GHSA-2598-2f59-rmhq,CRITICAL,SQL Injection in sequelize,1
+sequelize,GHSA-2777-2vq8-c4v4,HIGH,SQL Injection in sequelize,1
+sequelize,GHSA-2v7q-2xqx-f4q5,HIGH,Potential SQL Injection in sequelize,1
+sequelize,GHSA-5v9h-q3gj-c32x,CRITICAL,SQL Injection via GeoJSON in sequelize,1
+sequelize,GHSA-6457-6jrx-69cr,HIGH,Sequelize v6 Vulnerable to SQL Injection via JSON Column Cast Type,1
+sequelize,GHSA-8c25-f3mj-v6h8,MODERATE,Sequelize information disclosure vulnerability,1
+sequelize,GHSA-98pq-pmw9-4gpm,HIGH,SQL Injection in sequelize,1
+sequelize,GHSA-9c2p-jw8p-f84v,HIGH,SQL Injection in sequelize,1
+sequelize,GHSA-f598-mfpv-gmfx,CRITICAL,Sequelize - Default support for “raw attributes” when using parentheses,1
+sequelize,GHSA-fw4p-36j9-rrj3,MODERATE,Denial of Service in sequelize,1
+sequelize,GHSA-j9xp-92vc-559j,CRITICAL,SQL Injection in sequelize,1
+sequelize,GHSA-m9jw-237r-gvfv,CRITICAL,SQL Injection in sequelize,1
+sequelize,GHSA-vqfx-gj96-3w95,CRITICAL,Unsafe fall-through in getWhereConditions,1
+sequelize,GHSA-wfp9-vr4j-f49j,HIGH,NoSQL Injection in sequelize,1
+sequelize,GHSA-wrh9-cjv3-2hpw,CRITICAL,Sequelize vulnerable to SQL Injection via replacements,1
+sequelize,GHSA-x2jc-pwfj-h9p3,MODERATE,SQL Injection in sequelize,1
+sequelize,GHSA-xqg8-cv3h-xppv,HIGH,SQL Injection in sequelize,1
+knex,GHSA-4jv9-3563-23j3,HIGH,Knex.js has a limited SQL injection vulnerability,1
+knex,GHSA-58v4-qwx5-7f59,CRITICAL,SQL Injection in knex,1
+pg,GHSA-wc9v-mj63-m9g5,CRITICAL,Remote Code Execution in pg,1
+mysql,GHSA-5f7m-mmpc-qhh4,MODERATE,mysql Node.JS Module Vulnerable to Remote Memory Exposure,1
+mysql,GHSA-f982-mxwc-3mrx,MODERATE,MySQL for Node.js Unsafe Options,1
+mysql,GHSA-fvq6-55gv-jx9f,MODERATE,SQL Injection in mysql,1
+redis,GHSA-35q2-47q7-3pc3,HIGH,Node-Redis potential exponential regex in monitor mode,1
+mongodb,GHSA-mh5c-679w-hh4r,HIGH,Denial of Service in mongodb,1
+mongodb,GHSA-vxvm-qww3-2fh7,MODERATE,MongoDB Driver may publish events containing authentication-related data,1
+socket.io,GHSA-25hc-qcg6-38wj,MODERATE,socket.io has an unhandled 'error' event,1
+socket.io,GHSA-fxwf-4rqh-v8g3,MODERATE,CORS misconfiguration in socket.io,1
+socket.io,GHSA-qv2v-m59f-v5fw,HIGH,Insecure randomness in socket.io,1
+passport,GHSA-v923-w3x8-wh69,MODERATE,Passport vulnerable to session regeneration when a users logs in or out,1
+bcrypt,GHSA-5wg4-74h6-q47v,MODERATE,Integer Overflow or Wraparound and Use of a Broken or Risky Cryptographic Algorithm in bcrypt,1
+jsonwebtoken,GHSA-8cf7-32gw-wr33,HIGH,jsonwebtoken unrestricted key type could lead to legacy keys usage ,1
+jsonwebtoken,GHSA-c7hr-j4mj-j2w6,CRITICAL,Verification Bypass in jsonwebtoken,1
+jsonwebtoken,GHSA-hjrf-2m68-5959,MODERATE,jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Priv,1
+jsonwebtoken,GHSA-qwph-4952-7xr6,MODERATE,jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.veri,1
+nodemailer,GHSA-48ww-j4fc-435p,CRITICAL,Command injection in nodemailer,1
+nodemailer,GHSA-9h6g-pr28-7cqp,MODERATE,nodemailer ReDoS when trying to send a specially crafted email,1
+nodemailer,GHSA-c7w3-x93f-qmm8,LOW,Nodemailer has SMTP command injection due to unsanitized `envelope.size` parameter,1
+nodemailer,GHSA-hwqf-gcqm-7353,MODERATE,Header injection in nodemailer,1
+nodemailer,GHSA-mm7p-fcc7-pg87,MODERATE,Nodemailer: Email to an unintended domain can occur due to Interpretation Conflict,1
+nodemailer,GHSA-rcmh-qjqh-p98v,HIGH,Nodemailer’s addressparser is vulnerable to DoS caused by recursive calls,1
+nodemailer,GHSA-vvjj-xcjg-gr5g,MODERATE,Nodemailer Vulnerable to SMTP Command Injection via CRLF in Transport name Option (EHLO/HELO) ,1
+sharp,GHSA-54xq-cgqr-rpm3,HIGH,sharp vulnerability in libwebp dependency CVE-2023-4863,1
+sharp,GHSA-gp95-ppv5-3jc5,MODERATE,sharp vulnerable to Command Injection in post-installation over build environment,1
+multer,GHSA-44fp-w29j-9vj5,HIGH,Multer vulnerable to Denial of Service via memory leaks from unclosed streams,1
+multer,GHSA-4pg4-qvpc-4q3h,HIGH,Multer vulnerable to Denial of Service from maliciously crafted requests,1
+multer,GHSA-5528-5vmv-3xc2,HIGH,Multer Vulnerable to Denial of Service via Uncontrolled Recursion,1
+multer,GHSA-fjgf-rc76-4x9p,HIGH,Multer vulnerable to Denial of Service via unhandled exception from malformed request,1
+multer,GHSA-g5hg-p3ph-g8qg,HIGH,Multer vulnerable to Denial of Service via unhandled exception,1
+multer,GHSA-v52c-386h-88mc,HIGH,Multer vulnerable to Denial of Service via resource exhaustion,1
+multer,GHSA-xf7r-hgr6-v32p,HIGH,Multer vulnerable to Denial of Service via incomplete cleanup,1
+xlsx,GHSA-3x9f-74h4-2fqr,MODERATE,Denial of Service in SheetJS Pro,1
+xlsx,GHSA-4r6h-8v6p-xvw6,HIGH,Prototype Pollution in sheetJS,1
+xlsx,GHSA-5pgg-2g8v-p4x9,HIGH,SheetJS Regular Expression Denial of Service (ReDoS),1
+xlsx,GHSA-8vcr-vxm8-293m,MODERATE,Denial of Service in SheetsJS Pro,1
+xlsx,GHSA-g973-978j-2c3p,MODERATE,Denial of Service in SheetJS Pro,1
+tar,GHSA-29xp-372q-xqph,MODERATE,node-tar has a race condition leading to uninitialized memory exposure,1
+tar,GHSA-34x7-hfp2-rc4v,HIGH,node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal,1
+tar,GHSA-3jfq-g458-7qm9,HIGH,Arbitrary File Creation/Overwrite due to insufficient absolute path sanitization,1
+tar,GHSA-5955-9wpr-37jh,HIGH,Arbitrary File Creation/Overwrite on Windows via insufficient relative path sanitization,1
+tar,GHSA-83g3-92jg-28cx,HIGH,Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction,1
+tar,GHSA-8qq5-rm4j-mr97,HIGH,node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanit,1
+tar,GHSA-9ppj-qmqm-q256,HIGH,node-tar Symlink Path Traversal via Drive-Relative Linkpath,1
+tar,GHSA-9r2w-394v-53qc,HIGH,Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoni,1
+tar,GHSA-f5x3-32g6-xq36,MODERATE,Denial of service while parsing a tar file due to lack of folders count validation,1
+tar,GHSA-gfjr-3jmm-4g9v,HIGH,Symlink Arbitrary File Overwrite in tar,1
+tar,GHSA-j44m-qm6p-hp7m,HIGH,Arbitrary File Overwrite in tar,1
+tar,GHSA-qffp-2rhf-9h96,HIGH,tar has Hardlink Path Traversal via Drive-Relative Linkpath,1
+tar,GHSA-qq89-hq3f-393p,HIGH,Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoni,1
+tar,GHSA-r628-mhmh-qjhw,HIGH,Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoni,1
+tar,GHSA-r6q2-hw4h-h46w,HIGH,Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS,1
+unzipper,GHSA-884w-698f-927f,MODERATE,Arbitrary File Write via Archive Extraction in unzipper,1
