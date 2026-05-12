@@ -26,6 +26,7 @@ data/raw/
 !data/processed/npm_advisory.csv
 !data/processed/backstabbers_npm.csv
 !data/processed/llm_hallucinated_packages.csv
+!data/processed/benign_packages.csv
 
 # Model weights
 *.pt

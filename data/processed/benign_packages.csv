@@ -1,0 +1,149 @@
+name,label,author,maintainers_count,dependencies_count,has_install_script,exists,downloads
+react,0,,2,0,0,True,527694355
+react-dom,0,,2,1,0,True,497446390
+lodash,0,John-David Dalton,1,0,0,True,610101131
+express,0,TJ Holowaychuk,5,28,0,True,391980505
+axios,0,Matt Zabriskie,1,3,0,True,416830610
+moment,0,Iskren Ivov Chernev,5,0,0,True,130330775
+webpack,0,Tobias Koppers @sokra,8,24,0,True,184955042
+babel-core,0,Sebastian McKenzie,3,19,0,True,29064901
+eslint,0,Nicholas C. Zakas,2,30,0,True,532925566
+typescript,0,Microsoft Corp.,6,0,0,True,770520774
+chalk,0,,1,0,0,True,1711259761
+commander,0,TJ Holowaychuk,2,0,0,True,1565190109
+yargs,0,,2,6,0,True,740187911
+minimist,0,James Halliday,3,0,0,True,483725204
+semver,0,GitHub Inc.,4,0,0,True,2643234325
+debug,0,Josh Junon,2,1,0,True,2309273939
+glob,0,Isaac Z. Schlueter,1,3,0,True,1387774223
+mkdirp,0,,1,0,0,True,477639374
+rimraf,0,Isaac Z. Schlueter,1,2,0,True,549100834
+async,0,Caolan McMahon,5,0,0,True,358214476
+bluebird,0,Petka Antonov,1,0,0,True,176786053
+request,0,Mikeal Rogers,4,20,0,True,63276073
+node-fetch,0,David Frank,5,3,0,True,553922689
+got,0,,1,12,0,True,137707577
+cheerio,0,Matt Mueller,2,11,0,True,104213443
+puppeteer,0,The Chromium Authors,2,6,0,True,39364690
+mongoose,0,Guillermo Rauch,3,6,0,True,20755058
+sequelize,0,,9,16,0,True,11528173
+knex,0,Tim Griesser,5,14,0,True,16570184
+pg,0,Brian Carlson,1,6,0,True,102067937
+mysql2,0,Andrey Sidorov,1,8,0,True,39568685
+redis,0,,5,5,0,True,38344673
+socket.io,0,,2,7,0,True,53394233
+passport,0,Jared Hanson,1,3,0,True,27063481
+bcryptjs,0,Daniel Wirtz,1,0,0,True,35829959
+jsonwebtoken,0,auth0,3,10,0,True,169253560
+cors,0,Troy Goode,3,2,0,True,212268813
+helmet,0,Adam Baldwin,2,0,0,True,41423194
+dotenv,0,,3,0,0,True,506659398
+nodemailer,0,Andris Reinman,1,0,0,True,54904490
+sharp,0,Lovell Fuller,1,3,1,True,230100694
+multer,0,,5,4,0,True,59317720
+archiver,0,Chris Talkington,1,9,0,True,0
+tar,0,Isaac Z. Schlueter,1,5,0,True,0
+uuid,0,,2,0,0,True,0
+nanoid,0,Andrey Sitnik,1,0,0,True,0
+zod,0,Colin McDonnell,1,0,0,True,0
+yup,0,@monasticpanic Jason Quense,1,4,0,True,0
+joi,0,,6,7,0,True,0
+fastify,0,Matteo Collina,5,15,0,True,0
+koa,0,,11,18,0,True,0
+next,0,,3,6,0,True,0
+nuxt,0,,1,55,0,True,0
+vite,0,Evan You,2,5,0,True,0
+rollup,0,Rich Harris,5,1,0,True,0
+esbuild,0,,1,0,0,True,0
+prisma,0,Tim Suchanek,2,6,0,True,43547474
+typeorm,0,TypeORM,4,15,0,True,16707179
+jest,0,,5,4,0,True,175373321
+mocha,0,TJ Holowaychuk,2,21,0,True,55888646
+chai,0,Jake Luer,1,0,0,True,282773406
+sinon,0,Christian Johansen,4,4,0,True,42358785
+supertest,0,TJ Holowaychuk,6,3,0,True,53932117
+prettier,0,James Long,11,0,0,True,379711531
+husky,0,typicode,1,0,0,True,108100205
+cross-env,0,Kent C. Dodds,1,2,0,True,71815228
+concurrently,0,Kimmo Brunfeldt,2,6,0,True,65094170
+nodemon,0,Remy Sharp,1,10,0,True,50314295
+ts-node,0,Blake Embrey,2,13,0,True,175409156
+dayjs,0,iamkun,1,0,0,True,187843458
+date-fns,0,,1,0,0,True,339675952
+luxon,0,Isaac Cambron,2,0,0,True,112936838
+lodash-es,0,John-David Dalton,3,0,0,True,135130038
+ramda,0,Scott Sauyet,8,0,0,True,55092087
+underscore,0,Jeremy Ashkenas,2,0,0,True,89133934
+rxjs,0,Ben Lesh,3,1,0,True,342913495
+immer,0,Michel Weststrate,2,0,0,True,193222169
+zustand,0,Paul Henschel,3,0,0,True,136041200
+redux,0,,6,0,0,True,0
+mobx,0,Michel Weststrate,6,0,0,True,0
+recoil,0,,3,1,0,True,1945920
+jotai,0,Daishi Kato,2,0,0,True,16293471
+swr,0,,3,2,0,True,0
+graphql,0,,6,0,0,True,145594698
+winston,0,Charlie Robbins,8,11,0,True,89919838
+pino,0,Matteo Collina,4,11,0,True,0
+morgan,0,,2,5,0,True,0
+bunyan,0,Trent Mick,1,4,0,True,0
+inquirer,0,Simon Boudrias,3,7,0,True,179223380
+ora,0,Sindre Sorhus,1,8,0,True,0
+mime,0,Robert Kieffer,1,0,0,True,0
+mime-types,0,,5,1,0,True,771471692
+form-data,0,Felix Geisendörfer,6,5,0,True,0
+csv-parse,0,David Worms,1,0,0,True,0
+papaparse,0,Matthew Holt,2,0,0,True,0
+xlsx,0,sheetjs,1,7,0,True,0
+marked,0,Christopher Jeffrey,4,0,0,True,163924058
+highlight.js,0,Josh Goebel,4,0,0,True,84727946
+socket.io-client,0,,2,4,0,True,0
+ws,0,Einar Otto Stangvik,4,0,0,True,0
+stripe,0,Stripe,1,0,0,True,0
+aws-sdk,0,Amazon Web Services,2,10,0,True,38043723
+ioredis,0,Zihua Li,2,9,0,True,70385059
+lru-cache,0,Isaac Z. Schlueter,1,0,0,True,1736932888
+bull,0,OptimalBits,1,7,0,True,6084841
+bullmq,0,Taskforce.sh Inc.,1,6,0,True,19656265
+node-cron,0,Lucas Merencia,1,0,0,True,14485058
+compression,0,,3,7,0,True,134054397
+pm2,0,Strzelewicz Alexandre,1,22,0,True,0
+webpack-cli,0,,6,9,0,True,47173492
+webpack-dev-server,0,Tobias Koppers @sokra,8,28,0,True,0
+postcss,0,Andrey Sitnik,1,3,0,True,910511417
+tailwindcss,0,,3,0,0,True,411297047
+styled-components,0,Glen Maddern,3,4,0,True,39655828
+body-parser,0,,4,9,0,True,0
+cookie-parser,0,TJ Holowaychuk,3,2,0,True,0
+express-session,0,TJ Holowaychuk,2,8,0,True,15017351
+multer,0,,5,4,0,True,0
+mongoose-paginate-v2,0,Aravind NC,1,1,0,True,908552
+dotenv-safe,0,Rodrigo López Dato,2,0,0,True,0
+cross-env,0,Kent C. Dodds,1,2,0,True,71815228
+npm-run-all,0,Toru Nagashima,1,9,0,True,17534683
+rimraf,0,Isaac Z. Schlueter,1,2,0,True,0
+del,0,Sindre Sorhus,1,7,0,True,0
+glob,0,Isaac Z. Schlueter,1,3,0,True,0
+chokidar,0,Paul Miller,1,1,0,True,665262565
+execa,0,Sindre Sorhus,2,12,0,True,530839358
+chalk,0,,1,0,0,True,0
+ora,0,Sindre Sorhus,1,8,0,True,0
+inquirer,0,Simon Boudrias,3,7,0,True,0
+conf,0,Sindre Sorhus,1,9,0,True,0
+update-notifier,0,Sindre Sorhus,1,10,0,True,35004264
+boxen,0,Sindre Sorhus,1,8,0,True,95200069
+figures,0,Sindre Sorhus,1,1,0,True,0
+p-limit,0,Sindre Sorhus,1,1,0,True,0
+p-queue,0,,1,2,0,True,0
+p-retry,0,Sindre Sorhus,1,1,0,True,0
+bottleneck,0,Simon Grondin,1,0,0,True,0
+async-retry,0,,2,1,0,True,0
+got,0,,1,12,0,True,137707577
+ky,0,Sindre Sorhus,1,0,0,True,0
+serialize-javascript,0,Eric Ferraiuolo,3,0,0,True,200840014
+js-yaml,0,Vladimir Zapparov,1,1,0,True,0
+toml,0,Michelle Tilley,1,0,0,True,0
+ini,0,GitHub Inc.,4,0,0,True,0
+nconf,0,Charlie Robbins,3,4,0,True,3790663
+config,0,Loren West,3,1,0,True,6785394
+convict,0,Lloyd Hilaiel,6,2,0,True,4718828
