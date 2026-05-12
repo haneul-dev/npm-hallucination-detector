@@ -28,10 +28,11 @@ data/raw/
 !data/processed/llm_hallucinated_packages.csv
 
 # Model weights
-*.pkl
 *.pt
 *.bin
 models/checkpoints/
+*.pkl
+!models/baseline_rf.pkl
 
 # Environment
 .env
