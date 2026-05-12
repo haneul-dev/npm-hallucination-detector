@@ -19,10 +19,10 @@ env/
 
 # Data (raw data는 git에 올리지 않음)
 data/raw/
-data/processed/
 *.csv
 *.json
 !data/samples/*.csv
+!data/processed/maloss_npm_malicious.csv
 
 # Model weights
 *.pkl
