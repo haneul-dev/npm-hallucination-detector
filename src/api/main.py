@@ -1,27 +1,32 @@
 """
 FastAPI 실시간 위험도 평가 API
-POST /analyze  패키지명 입력 → 위험도 점수 + 판단 근거 반환
+POST /analyze  패키지명 입력 → 위험도 점수 + SHAP 판단 근거 반환
+GET  /model-info  현재 모델 메타데이터 반환
 """
 
 import json, re, pickle, os, numpy as np, urllib.request
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
+from src.explainability.shap_explainer import ShapExplainer
+
 app = FastAPI(
     title="npm Hallucination Detector API",
     description="LLM 환각 악용 npm 공급망 공격 탐지 API",
-    version="0.2.0",
+    version="0.3.0",
 )
 
 # ─── 모델 로드 ────────────────────────────────────────────────
 _MODEL_PATH = os.path.join(os.path.dirname(__file__), "../../models/baseline_rf.pkl")
 _bundle = None
+_shap: ShapExplainer = None
 
 def _load_model():
-    global _bundle
+    global _bundle, _shap
     if _bundle is None:
         with open(_MODEL_PATH, "rb") as f:
             _bundle = pickle.load(f)
+        _shap = ShapExplainer(_bundle["model"])
 
 POPULAR = ["react","express","lodash","axios","webpack","babel","eslint",
            "typescript","vue","angular","jquery","moment","chalk","commander",
@@ -99,6 +104,12 @@ def _build_reason(name: str, meta: dict, score: float) -> str:
 class PackageRequest(BaseModel):
     package_name: str
 
+class RiskFactor(BaseModel):
+    feature: str
+    label: str
+    impact: float
+    direction: str
+
 class RiskResponse(BaseModel):
     package_name: str
     risk_score: float
@@ -106,6 +117,7 @@ class RiskResponse(BaseModel):
     reason: str
     recommendation: str
     exists_on_npm: bool
+    top_risk_factors: list[RiskFactor]
 
 
 def _level(score: float) -> str:
@@ -119,7 +131,31 @@ def _recommendation(score: float) -> str:
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok", "version": "0.2.0", "model": "baseline_rf (F1=0.93)"}
+    return {"status": "ok", "version": "0.3.0", "model": "baseline_rf (F1=0.9565, AUC=0.9917)"}
+
+
+@app.get("/model-info")
+def model_info():
+    """현재 로드된 모델의 메타데이터 반환"""
+    _load_model()
+    rf = _bundle["model"]
+    return {
+        "model_type": type(rf).__name__,
+        "n_estimators": rf.n_estimators,
+        "n_features": rf.n_features_in_,
+        "feature_names": [
+            "log_downloads", "name_similarity", "suspicious_name",
+            "no_author", "has_install_script", "high_dependency",
+            "maintainers_count", "dependencies_count", "not_exists",
+        ],
+        "performance": {
+            "f1_score": 0.9565,
+            "auc_roc": 0.9917,
+            "mae": 0.0773,
+        },
+        "dataset_size": 7160,
+        "explainability": "SHAP TreeExplainer",
+    }
 
 
 @app.post("/analyze", response_model=RiskResponse)
@@ -132,6 +168,7 @@ def analyze_package(req: PackageRequest):
     X = _build_features(req.package_name, meta)
     X_scaled = _bundle["scaler"].transform(X)
     score = round(float(_bundle["model"].predict_proba(X_scaled)[0, 1]) * 100, 1)
+    top_factors = _shap.top_factors(X_scaled, k=3)
 
     return RiskResponse(
         package_name=req.package_name,
@@ -140,4 +177,5 @@ def analyze_package(req: PackageRequest):
         reason=_build_reason(req.package_name, meta, score),
         recommendation=_recommendation(score),
         exists_on_npm=meta.get("exists", True),
+        top_risk_factors=top_factors,
     )
