@@ -41,15 +41,21 @@ class ShapExplainer:
         단일 샘플(1×9)의 SHAP 값을 계산하여 위험도 기여 상위 k개 반환.
         양수 값 = 악성 쪽으로 기여, 음수 = 정상 쪽으로 기여.
         """
-        shap_vals = self.explainer.shap_values(X_scaled)
-        # RF binary: [class0_vals, class1_vals]
-        if isinstance(shap_vals, list):
-            vals = shap_vals[1][0]
+        explanation = self.explainer(X_scaled)
+        vals = np.array(explanation.values)
+
+        # SHAP 버전별 출력 형식 통일
+        # (n_samples, n_features, n_classes) → class 1 (악성)
+        if vals.ndim == 3:
+            vals_sample = vals[0, :, 1]
+        # (n_samples, n_features) → 첫 번째 샘플
+        elif vals.ndim == 2:
+            vals_sample = vals[0, :]
         else:
-            vals = shap_vals[0]
+            vals_sample = vals
 
         ranked = sorted(
-            zip(FEAT_NAMES, vals.tolist()),
+            zip(FEAT_NAMES, vals_sample.tolist()),
             key=lambda x: abs(x[1]),
             reverse=True,
         )[:k]
