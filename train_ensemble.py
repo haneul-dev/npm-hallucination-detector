@@ -21,7 +21,7 @@ DATA_SOURCES = {
     "maloss":       "data/processed/maloss_npm_malicious.csv",
     "backstabbers": "data/processed/backstabbers_npm.csv",
     "advisory":     "data/processed/npm_advisory.csv",
-    "hallucination":"data/processed/llm_hallucination.csv",
+    "hallucination":"data/processed/llm_hallucinated_packages.csv",
     "benign":       "data/processed/benign_packages.csv",
 }
 MODEL_OUT = "models/ensemble_xgb.pkl"
