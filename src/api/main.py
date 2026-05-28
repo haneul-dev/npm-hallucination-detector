@@ -85,11 +85,13 @@ def _build_reason(name: str, meta: dict, score: float) -> str:
         reasons.append("작성자 정보 없음")
     if meta.get("has_install_script"):
         reasons.append("postinstall 스크립트 존재")
-    if _name_similarity(name) > 0.7:
-        reasons.append(f"인기 패키지와 이름 유사 (유사도 {_name_similarity(name):.0%})")
+    sim = _name_similarity(name)
+    # 정확히 일치하면 진짜 인기 패키지 → 경고 제외
+    if sim > 0.7 and name.lower() not in POPULAR:
+        reasons.append(f"인기 패키지와 이름 유사 (유사도 {sim:.0%})")
     if _suspicious(name):
         reasons.append("의심스러운 이름 패턴")
-    if meta.get("maintainers_count", 1) <= 1:
+    if meta.get("maintainers_count", 1) <= 1 and meta.get("exists", True):
         reasons.append("관리자 1명 이하")
     return " | ".join(reasons) if reasons else "특이 패턴 없음"
 
